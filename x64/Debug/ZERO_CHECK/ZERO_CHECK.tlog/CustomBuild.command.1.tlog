@@ -1,0 +1,10 @@
+^F:\VS\CPP\CMAKEFILES\6582C9C9E4BBFE98DF9754AAE0CE0780\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SF:/vs/cpp -BF:/vs/cpp --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/vs/cpp/cppthings.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
