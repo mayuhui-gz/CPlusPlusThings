@@ -13,7 +13,7 @@ class Apple
             // Do nothing 
         }; 
 }; 
-
+int Apple::i = 1;
 int main() 
 { 
     Apple obj1; 

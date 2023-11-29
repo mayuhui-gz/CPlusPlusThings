@@ -12,6 +12,12 @@ endif()
 project ("cppthings")
 
 # 将源代码添加到此项目的可执行文件。
+add_executable (const "./basic_content/const/extern_const/const_file2")
+add_executable (file "./basic_content/const/extern_const/file2")
+add_executable (example_const "./basic_content/const/funciton_const/condition1/condition3")
+add_executable (class_const "./basic_content/const/class_const/c++11_example/main.cpp")
+add_executable (class_const_first "./basic_content/const/class_const/first_example/main.cpp")
+add_executable (static_error "./basic_content/static/static_error_variable.cpp")
 add_executable (variadic "./c++2.0/c++11/variadic/variadic")
 add_executable (variadic1 "./c++2.0/c++11/variadic/variadic1")
 

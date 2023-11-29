@@ -7,9 +7,12 @@ Apple::Apple(int i)
 }
 int Apple::add(int num){
     take(num);
+    return 0;
 }
-int Apple::add(int num) const{
+int Apple::add(int num) const {
+    cout << "const ";
     take(num);
+    return 0;
 }
 void Apple::take(int num) const
 {
@@ -18,7 +21,7 @@ void Apple::take(int num) const
 int Apple::getCount() const
 {
     take(1);
-//    add(); //error
+    add(2); //error
     return apple_number;
 }
 int main(){
