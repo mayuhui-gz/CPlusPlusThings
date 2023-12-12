@@ -10,7 +10,9 @@
 
 using namespace std;
 
-class A{};
+class A {
+    int b;
+};
 int main()
 {
     cout<<sizeof(A)<<endl;

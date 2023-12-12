@@ -18,6 +18,12 @@ add_executable (example_const "./basic_content/const/funciton_const/condition1/c
 add_executable (class_const "./basic_content/const/class_const/c++11_example/main.cpp")
 add_executable (class_const_first "./basic_content/const/class_const/first_example/main.cpp")
 add_executable (static_error "./basic_content/static/static_error_variable.cpp")
+add_executable (inline "./basic_content/inline/inline_virtual.cpp")
+add_executable (blackclass "./basic_content/sizeof/blackclass.cpp")
+add_executable (sizeofstatic "./basic_content/sizeof/static.cpp")
+add_executable (func "./basic_content/func_pointer/func_pointer.cpp")
+#add_executable (vptr "./basic_content/vptr_vtable/vptr1.cpp")
+add_executable (set1 "./basic_content/virtual/set1/emp.cpp")
 add_executable (variadic "./c++2.0/c++11/variadic/variadic")
 add_executable (variadic1 "./c++2.0/c++11/variadic/variadic1")
 

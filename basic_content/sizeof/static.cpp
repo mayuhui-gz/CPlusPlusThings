@@ -13,7 +13,10 @@ class A
 {
     public:
         char b;
+        char t;
+        int e;
         virtual void fun() {};
+
         static int c;
         static int d;
         static int f;

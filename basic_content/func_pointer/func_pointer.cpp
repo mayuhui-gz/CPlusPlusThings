@@ -14,6 +14,8 @@ using namespace std;
  */
 void (*pFun)(int); 
 
+int (*p)(char);
+
 /**
  * @brief 代表一种新类型，不是变量！所以与上述的pFun不一样！
  */
@@ -21,13 +23,18 @@ typedef void (*func)(void);
 
 void myfunc(void)
 {
-    cout<<"asda"<<endl;
+    cout<<"asda基类"<<endl;
 }
 
 void glFun(int a){ cout<<a<<endl;} 
-int main(){
+int glFun1(char a) { cout << a << endl;  return 0; }
+int main() {
     func pfun = myfunc;/*赋值*/  
-    pfun();/*调用*/  
-    pFun = glFun; 
-    (*pFun)(2); 
-}
+   // pfun();/*调用*/
+    pFun = glFun;
+    (*pFun)(2);
+    pfun();/*调用*/
+    p = glFun1;
+    (*p)('a');
+    pfun();/*调用*/
+};
